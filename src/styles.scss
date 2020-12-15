@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+$FONT_KALAM: 'Kalam', cursive;
+$FONT_NERKO: 'Nerko One', cursive;
+$FONT_DANCING: 'Dancing Script', cursive;
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.banner {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    width: 250%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #000, #000);
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: bannerAnimation 3s linear forwards;
+  }
+
+  h1 {
+    color: #91130f;
+    font-family: $FONT_DANCING;
+    font-size: 120px;
+    margin-bottom: 100px;
+    border-top: 5px solid #91130f;
+    border-bottom: 5px solid #91130f;
+  }
+
+  button {
+    width: 240px;
+    padding: 10px;
+    background: linear-gradient(
+      to right,
+      rgba(233, 122, 111, 1),
+      rgba(187, 62, 50, 0.8)
+    );
+    font-family: $FONT_KALAM;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transform: perspective(500px) rotateY(-15deg);
+    text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    animation: buttonAnimation 1s 2.5s backwards;
+    transition: all 0.5s;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, transparent, #fff, transparent);
+      position: absolute;
+      top: 0;
+      left: -100%;
+      transform: skewX(-30deg);
+      transition: left 0.5s;
+    }
+
+    &:hover {
+      transform: perspective(500px) rotateY(15deg);
+      text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.4);
+      background: linear-gradient(
+        to left,
+        rgba(233, 122, 111, 1),
+        rgba(187, 62, 50, 0.8)
+      );
+    }
+
+    &:hover::before {
+      left: 100%;
+    }
+  }
+}
+
+.slideshow-wrapper {
+  display: none;
+}
+
+@keyframes bannerAnimation {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -250%;
+  }
+}
+
+@keyframes buttonAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
