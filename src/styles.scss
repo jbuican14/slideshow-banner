@@ -119,20 +119,54 @@ $FONT_DANCING: 'Dancing Script', cursive;
     background: url('https://www.thehackneywick.co.uk/assets/buildings/tokyo-wynand-van-poortvliet-unsplash.jpg')
       center no-repeat;
     background-size: cover;
+
+    p {
+      color: rgb(240, 247, 247);
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 1px;
+    }
   }
 }
 
 .content {
-  width: 500px;
+  width: 650px;
   position: relative;
-  top: 35%;
+  top: 15%;
   left: 5%;
+
+  i {
+    margin-left: 8px;
+  }
 
   h3 {
     font-family: $FONT_NERKO;
     font-size: 80px;
     font-weight: 400;
     color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: rgba(3, 29, 34, 0.7);
+  }
+
+  p {
+    font-family: $FONT_KALAM;
+    font-size: 20px;
+    color: #ccc;
+  }
+
+  button {
+    font-family: $FONT_KALAM;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    width: 150px;
+    padding: 10px 10px 0 0;
+    margin-top: 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
   }
 }
 
