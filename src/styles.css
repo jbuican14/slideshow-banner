@@ -101,23 +101,22 @@
 }
 
 .slide:nth-child(1) {
-  background: url("https://www.thehackneywick.co.uk/assets/buildings/london-david-dibert-unsplash.jpg") center no-repeat;
+  background: linear-gradient(100deg, #262626, rgba(38, 38, 38, 0.8), transparent), url("https://www.thehackneywick.co.uk/assets/buildings/london-david-dibert-unsplash.jpg") center no-repeat;
   background-size: cover;
 }
 
 .slide:nth-child(2) {
-  background: url("https://www.thehackneywick.co.uk/assets/buildings/newyork-sebastian-kurpiel-unsplash.jpg") center no-repeat;
+  background: linear-gradient(100deg, #262626, rgba(38, 38, 38, 0.8), transparent), url("https://www.thehackneywick.co.uk/assets/buildings/newyork-sebastian-kurpiel-unsplash.jpg") center no-repeat;
   background-size: cover;
 }
 
 .slide:nth-child(3) {
-  background: url("https://www.thehackneywick.co.uk/assets/buildings/tokyo-wynand-van-poortvliet-unsplash.jpg") center no-repeat;
+  background: linear-gradient(100deg, #262626, rgba(38, 38, 38, 0.8), transparent), url("https://www.thehackneywick.co.uk/assets/buildings/tokyo-wynand-van-poortvliet-unsplash.jpg") center no-repeat;
   background-size: cover;
 }
 
 .slide:nth-child(3) p {
   color: #f0f7f7;
-  background-color: rgba(0, 0, 0, 0.4);
   padding: 1px;
 }
 
