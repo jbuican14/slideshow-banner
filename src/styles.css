@@ -45,6 +45,18 @@
   border-bottom: 5px solid #91130f;
 }
 
+@media (max-width: 100px) {
+  .banner h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner h1 {
+    font-size: 40px;
+  }
+}
+
 .banner button {
   width: 240px;
   padding: 10px;
@@ -66,6 +78,14 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .banner button {
+    font-size: 20px;
+    width: 180px;
+    padding: 7px;
+  }
 }
 
 .banner button::before {
@@ -144,6 +164,12 @@
   left: 5%;
 }
 
+@media (max-width: 600px) {
+  .content {
+    width: 300px;
+  }
+}
+
 .content i {
   margin-left: 8px;
 }
@@ -155,10 +181,22 @@
   color: #ffffff;
 }
 
+@media (max-width: 600px) {
+  .content h3 {
+    font-size: 30px;
+  }
+}
+
 .content p {
   font-family: "Kalam", cursive;
   font-size: 20px;
   color: #ccc;
+}
+
+@media (max-width: 600px) {
+  .content p {
+    font-size: 15px;
+  }
 }
 
 .content button {
